@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,21 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stacker - Bitcoin DCA Friendlier</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Swiper CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
-        
         <div class="header-content">
-            <img src="/assets/icono.png" alt="Stacker Logo" class="logo">
+            <img src="https://raw.githubusercontent.com/BriantPosada/Stacker/main/assets/icono.png" alt="Stacker Logo" class="logo">
             <div>
-        
                 <h1>Stacker</h1>
                 <p class="subtitle">Bitcoin DCA Friendlier</p>
             </div>
         </div>
-        <!---
-        <img src="/assets/icono.png" alt="Stacker Banner" class="banner">
-        --->
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides with images -->
+                <div class="swiper-slide"><img src="https://via.placeholder.com/1200x400?text=App+Screenshot+1" alt="Slide 1"></div>
+                <div class="swiper-slide"><img src="https://via.placeholder.com/1200x400?text=App+Screenshot+2" alt="Slide 2"></div>
+                <div class="swiper-slide"><img src="https://via.placeholder.com/1200x400?text=App+Screenshot+3" alt="Slide 3"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </header>
     <section class="features">
         <h2>Features</h2>
@@ -59,5 +70,25 @@
         <p>Contact: <a href="mailto:phi.appadds@gmail.com">phi.appadds@gmail.com</a></p>
         <p>&copy; 2025 <a href="https://x.com/SoyElBriant" target="_blank"> BriantPosada.</a> All rights reserved.</p>
     </footer>
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
 </body>
 </html>
+
+
