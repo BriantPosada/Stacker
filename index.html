@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stacker - Bitcoin DCA Friendlier</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Swiper CSS CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=archivo@100,200,300,400,500,600,700,800,900&f[]=clash-display@200,300,400,500,600,700&display=swap">
 </head>
 <body>
     <header>
@@ -17,22 +18,138 @@
                 <p class="subtitle">Bitcoin DCA Friendlier</p>
             </div>
         </div>
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides with images -->
-                <div class="swiper-slide"><img src="/download/720x1440 -1.jpg" alt="Slide 1"></div>
-                <div class="swiper-slide"><img src="/download/720x1440-2.jpg" alt="Slide 2"></div>
-                <div class="swiper-slide"><img src="/download/720x1440-3.jpg" alt="Slide 3"></div>
-                <div class="swiper-slide"><img src="/download/720x1440-4.jpg" alt="Slide 4"></div>
-                <div class="swiper-slide"><img src="/download/720x1440-5.jpg" alt="Slide 5"></div>
+        <div class="slider">
+            <button class="slider--btn slider--btn__prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m15 18-6-6 6-6" />
+                </svg>
+            </button>
+            <div class="slides__wrapper">
+                <div class="slides">
+                    <!-- Slide 1 -->
+                    <div class="slide" data-current>
+                        <div class="slide__inner">
+                            <div class="slide--image__wrapper">
+                                <img class="slide--image" src="https://raw.githubusercontent.com/BriantPosada/Stacker/main/assets/screenshots/720x1440-1.jpg" alt="Stacker Screenshot 1" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide__bg" style="--bg: url(https://raw.githubusercontent.com/BriantPosada/Stacker/main/assets/screenshots/720x1440-1.jpg); --dir: 0" data-current></div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide" data-next>
+                        <div class="slide__inner">
+                            <div class="slide--image__wrapper">
+                                <img class="slide--image" src="https://raw.githubusercontent.com/BriantPosada/Stacker/main/assets/screenshots/720x1440-2.jpg" alt="Stacker Screenshot 2" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide__bg" style="--bg: url(https://raw.githubusercontent.com/BriantPosada/Stacker/main/assets/screenshots/720x1440-2.jpg); --dir: 1" data-next></div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide" data-previous>
+                        <div class="slide__inner">
+                            <div class="slide--image__wrapper">
+                                <img class="slide--image" src="https://raw.githubusercontent.com/BriantPosada/Stacker/main/assets/screenshots/720x1440-3.jpg" alt="Stacker Screenshot 3" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide__bg" style="--bg: url(https://raw.githubusercontent.com/BriantPosada/Stacker/main/assets/screenshots/720x1440-3.jpg); --dir: -1" data-previous></div>
+
+                    <!-- Slide 4 -->
+                    <div class="slide">
+                        <div class="slide__inner">
+                            <div class="slide--image__wrapper">
+                                <img class="slide--image" src="https://raw.githubusercontent.com/BriantPosada/Stacker/main/assets/screenshots/720x1440-4.jpg" alt="Stacker Screenshot 4" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide__bg" style="--bg: url(https://raw.githubusercontent.com/BriantPosada/Stacker/main/assets/screenshots/720x1440-4.jpg); --dir: 1"></div>
+
+                    <!-- Slide 5 -->
+                    <div class="slide">
+                        <div class="slide__inner">
+                            <div class="slide--image__wrapper">
+                                <img class="slide--image" src="https://raw.githubusercontent.com/BriantPosada/Stacker/main/assets/screenshots/720x1440-5.jpg" alt="Stacker Screenshot 5" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide__bg" style="--bg: url(https://raw.githubusercontent.com/BriantPosada/Stacker/main/assets/screenshots/720x1440-5.jpg); --dir: -1"></div>
+                </div>
+                <div class="slides--infos">
+                    <!-- Slide Info 1 -->
+                    <div class="slide-info" data-current>
+                        <div class="slide-info__inner">
+                            <div class="slide-info--text__wrapper">
+                                <div data-title class="slide-info--text"><span>Feature Demo</span></div>
+                                <div data-subtitle class="slide-info--text"><span>Stacker</span></div>
+                                <div data-description class="slide-info--text"><span>Explore the app</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide Info 2 -->
+                    <div class="slide-info" data-next>
+                        <div class="slide-info__inner">
+                            <div class="slide-info--text__wrapper">
+                                <div data-title class="slide-info--text"><span>DCA Made Easy</span></div>
+                                <div data-subtitle class="slide-info--text"><span>Stacker</span></div>
+                                <div data-description class="slide-info--text"><span>Smart investing</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide Info 3 -->
+                    <div class="slide-info" data-previous>
+                        <div class="slide-info__inner">
+                            <div class="slide-info--text__wrapper">
+                                <div data-title class="slide-info--text"><span>Goal Tracking</span></div>
+                                <div data-subtitle class="slide-info--text"><span>Stacker</span></div>
+                                <div data-description class="slide-info--text"><span>Reach your targets</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide Info 4 -->
+                    <div class="slide-info">
+                        <div class="slide-info__inner">
+                            <div class="slide-info--text__wrapper">
+                                <div data-title class="slide-info--text"><span>Multi-Currency</span></div>
+                                <div data-subtitle class="slide-info--text"><span>Stacker</span></div>
+                                <div data-description class="slide-info--text"><span>Track globally</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide Info 5 -->
+                    <div class="slide-info">
+                        <div class="slide-info__inner">
+                            <div class="slide-info--text__wrapper">
+                                <div data-title class="slide-info--text"><span>Calculator</span></div>
+                                <div data-subtitle class="slide-info--text"><span>Stacker</span></div>
+                                <div data-description class="slide-info--text"><span>Instant conversions</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <button class="slider--btn slider--btn__next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m9 18 6-6-6-6" />
+                </svg>
+            </button>
+        </div>
+        <div class="loader">
+            <span class="loader__text">0%</span>
+        </div>
+        <div class="support">
+            <a href="https://twitter.com/SoyElBriant" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                </svg>
+            </a>
+            <a href="https://github.com/BriantPosada/Stacker" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+            </a>
         </div>
     </header>
     <section class="features">
@@ -72,25 +189,199 @@
         <p>Contact: <a href="mailto:phi.appadds@gmail.com">phi.appadds@gmail.com</a></p>
         <p>&copy; 2025 <a href="https://x.com/SoyElBriant" target="_blank"> BriantPosada.</a> All rights reserved.</p>
     </footer>
-    <!-- Swiper JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
+    <script type="module">
+        import imagesLoaded from 'https://esm.sh/imagesloaded';
+
+        // Utilities
+        const wrap = (n, max) => (n + max) % max;
+        const lerp = (a, b, t) => a + (b - a) * t;
+
+        // Raf Class
+        class Raf {
+            constructor() {
+                this.rafId = 0;
+                this.callbacks = [];
+            }
+            start() {
+                this.raf();
+            }
+            stop() {
+                cancelAnimationFrame(this.rafId);
+            }
+            raf() {
+                this.callbacks.forEach(({ callback, id }) => callback({ id }));
+                this.rafId = requestAnimationFrame(() => this.raf());
+            }
+            add(callback, id) {
+                const newId = id || Date.now().toString();
+                this.callbacks.push({ callback, id: newId });
+                if (this.callbacks.length === 1) this.start();
+                return newId;
+            }
+            remove(id) {
+                this.callbacks = this.callbacks.filter(cb => cb.id !== id);
+                if (this.callbacks.length === 0) this.stop();
+            }
+        }
+
+        // Vec2 Class
+        class Vec2 {
+            constructor(x = 0, y = 0) {
+                this.x = x;
+                this.y = y;
+            }
+            set(x, y) {
+                this.x = x;
+                this.y = y;
+            }
+            lerp(v, t) {
+                this.x = lerp(this.x, v.x, t);
+                this.y = lerp(this.y, v.y, t);
+            }
+        }
+
+        // Tilt Function
+        function tilt(node, options = {}) {
+            const { trigger = node, target = [node] } = options;
+            let lerpAmount = 0.06;
+            const rotDeg = new Vec2();
+            const bgPos = new Vec2();
+            const raf = new Raf();
+
+            const update = () => {
+                rotDeg.lerp({ x: 0, y: 0 }, lerpAmount);
+                bgPos.lerp({ x: 0, y: 0 }, lerpAmount);
+                target.forEach(el => {
+                    el.style.setProperty("--rotX", `${rotDeg.y.toFixed(2)}deg`);
+                    el.style.setProperty("--rotY", `${rotDeg.x.toFixed(2)}deg`);
+                    el.style.setProperty("--bgPosX", `${bgPos.x.toFixed(2)}%`);
+                    el.style.setProperty("--bgPosY", `${bgPos.y.toFixed(2)}%`);
+                });
+            };
+
+            const onMouseMove = ({ offsetX, offsetY }) => {
+                lerpAmount = 0.1;
+                target.forEach(el => {
+                    const ox = (offsetX - el.clientWidth * 0.5) / (Math.PI * 3);
+                    const oy = -(offsetY - el.clientHeight * 0.5) / (Math.PI * 4);
+                    rotDeg.set(ox, oy);
+                    bgPos.set(-ox * 0.3, oy * 0.3);
+                });
+            };
+
+            const onMouseLeave = () => {
+                lerpAmount = 0.06;
+                rotDeg.set(0, 0);
+                bgPos.set(0, 0);
+            };
+
+            raf.add(update);
+            trigger.addEventListener("mousemove", onMouseMove);
+            trigger.addEventListener("mouseleave", onMouseLeave);
+
+            return { destroy: () => raf.remove(raf.add(update)) };
+        }
+
+        // Initialization
+        function init() {
+            const loader = document.querySelector(".loader");
+            const slides = [...document.querySelectorAll(".slide")];
+            const slidesInfo = [...document.querySelectorAll(".slide-info")];
+            const buttons = {
+                prev: document.querySelector(".slider--btn__prev"),
+                next: document.querySelector(".slider--btn__next")
+            };
+
+            loader.style.opacity = 0;
+            loader.style.pointerEvents = "none";
+
+            slides.forEach((slide, i) => {
+                const slideInner = slide.querySelector(".slide__inner");
+                const slideInfoInner = slidesInfo[i].querySelector(".slide-info__inner");
+                tilt(slide, { target: [slideInner, slideInfoInner] });
+            });
+
+            buttons.prev.addEventListener("click", change(-1));
+            buttons.next.addEventListener("click", change(1));
+        }
+
+        function setup() {
+            const loaderText = document.querySelector(".loader__text");
+            const images = [...document.querySelectorAll("img")];
+            const totalImages = images.length;
+            let loadedImages = 0;
+            let progress = { current: 0, target: 0 };
+
+            images.forEach((image) => {
+                imagesLoaded(image, (instance) => {
+                    if (instance.isComplete) {
+                        loadedImages++;
+                        progress.target = loadedImages / totalImages;
+                    }
+                });
+            });
+
+            const raf = new Raf();
+            raf.add(({ id }) => {
+                progress.current = lerp(progress.current, progress.target, 0.06);
+                const progressPercent = Math.round(progress.current * 100);
+                loaderText.textContent = `${progressPercent}%`;
+
+                if (progressPercent === 100) {
+                    init();
+                    raf.remove(id);
+                }
+            });
+        }
+
+        function change(direction) {
+            return () => {
+                let current = {
+                    slide: document.querySelector(".slide[data-current]"),
+                    slideInfo: document.querySelector(".slide-info[data-current]"),
+                    slideBg: document.querySelector(".slide__bg[data-current]")
+                };
+                let previous = {
+                    slide: document.querySelector(".slide[data-previous]"),
+                    slideInfo: document.querySelector(".slide-info[data-previous]"),
+                    slideBg: document.querySelector(".slide__bg[data-previous]")
+                };
+                let next = {
+                    slide: document.querySelector(".slide[data-next]"),
+                    slideInfo: document.querySelector(".slide-info[data-next]"),
+                    slideBg: document.querySelector(".slide__bg[data-next]")
+                };
+
+                Object.values(current).forEach(el => el?.removeAttribute("data-current"));
+                Object.values(previous).forEach(el => el?.removeAttribute("data-previous"));
+                Object.values(next).forEach(el => el?.removeAttribute("data-next"));
+
+                if (direction === 1) {
+                    let temp = current;
+                    current = next;
+                    next = previous;
+                    previous = temp;
+                    current.slide.style.zIndex = "20";
+                    previous.slide.style.zIndex = "30";
+                    next.slide.style.zIndex = "10";
+                } else if (direction === -1) {
+                    let temp = current;
+                    current = previous;
+                    previous = next;
+                    next = temp;
+                    current.slide.style.zIndex = "20";
+                    previous.slide.style.zIndex = "10";
+                    next.slide.style.zIndex = "30";
+                }
+
+                Object.values(current).forEach(el => el?.setAttribute("data-current", ""));
+                Object.values(previous).forEach(el => el?.setAttribute("data-previous", ""));
+                Object.values(next).forEach(el => el?.setAttribute("data-next", ""));
+            };
+        }
+
+        // Start
+        setup();
     </script>
 </body>
 </html>
-
-
