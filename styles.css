@@ -34,7 +34,7 @@ header {
 /* Estilos para el slider */
 .swiper {
     width: 100%;
-    height: 400px; /* Alto fijo, ajustable según necesites */
+    height: 100px; /* Alto fijo, ajustable según necesites */
     margin: 20px 0;
 }
 
