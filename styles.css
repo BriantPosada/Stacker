@@ -34,13 +34,13 @@ header {
 /* Estilos para el slider */
 .swiper {
     width: 100%;
-    height: 400px; /* Alto fijo, ajustable según necesites */
+    height: 900px; /* Alto fijo, ajustable según necesites */
     margin: 20px 0;
 }
 
 .swiper-slide img {
-    width: 720px;
-    height: 720px;
+    width: 100%;
+    height: 100%;
     object-fit: cover; /* Escala la imagen manteniendo proporción */
     display: block;
 }
