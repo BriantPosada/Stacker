@@ -8,8 +8,8 @@ body {
     line-height: 1.6;
 }
 .swiper-wrapper {
-    width: 150;
-    height: 300;
+    width: 150px;
+    height: 300px;
 }
 header {
     background-color: #003087;
