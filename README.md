@@ -1,0 +1,2 @@
+# Stacker
+Bitcoin DCA Friendlier
